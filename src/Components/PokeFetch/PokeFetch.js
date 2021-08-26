@@ -66,9 +66,11 @@ class PokeFetch extends Component {
     return (
       <div className={'wrapper'}>
 
+        <h1 className={'timer'}>Guess the Pokémon!</h1>
+
         <button className={'start'} onClick={() => this.startTimer()}>Start!</button>
 
-        <h1 className={'timer'}>{this.state.seconds}</h1>
+        <h1 className={'timer'}>{this.state.seconds} Seconds Left</h1>
         <div className={'pokeWrap'}>
 
         {this.state.seconds == 0
